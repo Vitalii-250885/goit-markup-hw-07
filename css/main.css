@@ -164,7 +164,8 @@ p {
 .hero {
   position: relative;
   background-color: #2F303A;
-  background-image: url(../images/hero-bgimg-min.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgimg-min.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgimg-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -174,16 +175,6 @@ p {
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.hero__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 600px;
-  width: 1600px;
-  padding-top: 200px;
-  background: rgba(47, 48, 58, 0.4);
 }
 
 .hero__header {
@@ -522,6 +513,15 @@ p {
 }
 
 .privelege__object {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 270px;
   height: 120px;
   background-color: #F5F4FA;
@@ -532,7 +532,6 @@ p {
 .privelege__icon {
   width: 70px;
   height: 70px;
-  margin: 25px 100px;
 }
 
 .privelege__list {
@@ -671,19 +670,26 @@ p {
           justify-content: center;
 }
 
-.social__icon-link {
-  display: block;
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 44px;
   width: 44px;
   border-radius: 50%;
-}
-
-.social__icon-link {
   background-color: #fff;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social__link:hover .social__icon-link, .social__link:focus .social__icon-link {
+
+.social__link:hover,
+.social__link:focus {
   background-color: #2196F3;
 }
 
@@ -691,7 +697,6 @@ p {
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
-  margin: 12px;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -727,7 +732,7 @@ p {
   margin: 12px;
 }
 
-.social-footer__img {
+.social-footer__link {
   display: block;
   height: 44px;
   width: 44px;
@@ -736,7 +741,9 @@ p {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-footer__link:hover .social-footer__img, .social-footer__link:focus .social-footer__img {
+
+.social-footer__link:hover,
+.social-footer__link:focus {
   background: #2196F3;
 }
 
@@ -771,7 +778,16 @@ p {
           justify-content: center;
 }
 
-.regular-customer__img {
+.regular-customer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   width: 170px;
@@ -779,10 +795,9 @@ p {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.regular-customer__link:hover .regular-customer__img {
-  border-color: #2196F3;
-}
-.regular-customer__link:focus .regular-customer__img {
+
+.regular-customer__link:hover,
+.regular-customer__link:focus {
   border-color: #2196F3;
 }
 

@@ -1,7 +1,7 @@
 .hero {
     position: relative;
     background-color: #2F303A;
-    background-image: url(../images/hero-bgimg-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgimg-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,16 +11,6 @@
     width: 1600px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.hero__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 600px;
-    width: 1600px;
-    padding-top: 200px;
-    background: rgba(47, 48, 58, 0.4);
 }
 
 .hero__header {
